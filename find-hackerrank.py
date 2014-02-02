@@ -21,11 +21,11 @@ def find_conversation_ranks(conversations):
     start_and_end_pattern = re.compile('^hackerrank$')
 
     for conversation in conversations:
-        if start_and_end_pattern.search(conversation):
+        if start_and_end_pattern.match(conversation):
             print(0)
-        elif start_pattern.search(conversation):
+        elif start_pattern.match(conversation):
             print(1)
-        elif end_pattern.search(conversation):
+        elif end_pattern.match(conversation):
             print(2)
         else:
             print(-1)
