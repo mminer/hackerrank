@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 
 """
-Print numbers 1 to 100. For multiples of three print "Fizz". For multiples of
-five print "Buzz". For numbers which are multiples of both three and five print
-"FizzBuzz".
+Prints numbers 1 to 100. Prints "Fizz" for multiples of three. Prints "Buzz"
+for multiples of five. Prints "FizzBuzz" for multiples of both three and five.
 
 https://www.hackerrank.com/challenges/fizzbuzz
 """

@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 
 """
-Given N integers, count the total pairs of integers that have a difference of
-K.
+Given N integers, counts total pairs of integers with a difference of K.
 
 https://www.hackerrank.com/challenges/pairs
 """

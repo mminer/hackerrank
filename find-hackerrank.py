@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Given a list of conversations, figure out which ones:
+Given a list of conversations, figures out which ones:
 
 - Start with "hackerrank"
 - End with "hackerrank"
