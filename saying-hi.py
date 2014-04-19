@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Determine which lines match the pattern 'hi<BLANK>' and aren't immediately
+Determines which lines match the pattern 'hi<BLANK>' and aren't immediately
 followed by the letter D. Both 'hi' and D are case-insensitive.
 
 https://www.hackerrank.com/challenges/saying-hi
