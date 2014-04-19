@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Identifies whether a fictional identification number is valid.
+Identifies whether fictional identification numbers are valid.
 
 https://www.hackerrank.com/challenges/utopian-identification-number
 """
