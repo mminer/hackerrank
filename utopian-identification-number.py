@@ -11,17 +11,10 @@ import re
 
 def validate_ids(ids):
     """Prints 'VALID' for valid IDs, 'INVALID' otherwise."""
-    pattern = get_pattern()
+    pattern = re.compile('^[a-z]{,3}\d{2,8}[A-Z]{3,}$')
 
     for citizen_id in ids:
         print('VALID' if pattern.match(citizen_id) else 'INVALID')
-
-
-def get_pattern():
-    """Compiles a regex pattern that matches the fictional ID format."""
-    regex = '^[a-z]{,3}\d{2,8}[A-Z]{3,}$'
-    pattern = re.compile(regex)
-    return pattern
 
 
 if __name__ == '__main__':
