@@ -1,5 +1,7 @@
 // Determines how many chocolates of price $C can be purchased given a $N bill.
 // An additional chocolate is free for every M wrappers traded.
+//
+// https://www.hackerrank.com/challenges/chocolate-feast
 
 #include <iostream>
 using namespace std;
