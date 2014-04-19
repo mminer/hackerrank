@@ -3,6 +3,8 @@
 """
 Given a line of text possibly containing latitude and longitude of a point, use
 regular expressions to identify latitude and longitude referred to (if any).
+
+https://www.hackerrank.com/challenges/detecting-valid-latitude-and-longitude
 """
 
 import re
