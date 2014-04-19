@@ -10,7 +10,15 @@ import re
 
 def validate_pairs(pairs):
     """Prints 'Valid' for valid lat/lon pairs, 'Invalid' otherwise."""
-    latlon_pattern = (
+    pattern = get_pattern()
+
+    for pair in pairs:
+        print('Valid' if pattern.match(pair) else 'Invalid')
+
+
+def get_pattern():
+    """Compiles a regex pattern that matches valid lat/lon pairs."""
+    regex = (
         '^\('  # Opening bracket
         '[-+]?'  # Sign (optional)
         '((([1-9]|[1-8]\d)(\.\d+)?)|90(\.0+)?)'  # 1 - 90
@@ -20,10 +28,8 @@ def validate_pairs(pairs):
         '\)$'  # Closing bracket
     )
 
-    pattern = re.compile(latlon_pattern)
-
-    for pair in pairs:
-        print('Valid' if pattern.match(pair) else 'Invalid')
+    pattern = re.compile(regex)
+    return pattern
 
 
 if __name__ == '__main__':
