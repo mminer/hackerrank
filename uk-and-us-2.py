@@ -2,10 +2,10 @@
 
 """
 Counts the occurrences of words in their British and American spelling.
-Specifically, given a word with the US "ze" suffix, also count occurrences of
-words with the UK "se" suffix (e.g. treat realize and realise the same).
+Specifically, given a word containing the UK "our", also count occurences of
+words with the US "or" (e.g. treat colour and color the same).
 
-https://www.hackerrank.com/challenges/uk-and-us
+https://www.hackerrank.com/challenges/uk-and-us-2
 """
 
 import re
@@ -21,7 +21,10 @@ def count_occurrences(lines, words):
 
 def get_pattern(word):
     """Compiles a regex pattern that matches the US and UK word spelling."""
-    regex = '{0}[sz]e'.format(word[:-2])
+    word_regex = word.replace('our', 'ou?r')
+    # Ensure word isn't substring of another.
+    # That is, we don't want a match for "savour" with the word "savoury".
+    regex = '{0}(?!\w)'.format(word_regex)
     pattern = re.compile(regex)
     return pattern
 
