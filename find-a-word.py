@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Counts the occurrences of a given word in lines of text.
+Counts the occurrences of words in lines of text.
 
 https://www.hackerrank.com/challenges/find-a-word
 """
