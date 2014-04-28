@@ -22,7 +22,7 @@ def count_occurrences(lines, words):
 def get_pattern(word):
     """Compiles a regex pattern that matches the US and UK word spelling."""
     word_regex = word.replace('our', 'ou?r')
-    # Ensure word isn't substring of another.
+    # Ensure word isn't substring of another / followed by other letters.
     # That is, we don't want a match for "savour" with the word "savoury".
     regex = '{0}(?!\w)'.format(word_regex)
     pattern = re.compile(regex)
