@@ -37,5 +37,5 @@ def get_pattern():
 
 if __name__ == '__main__':
     number_count = int(input())
-    numbers = [input() for _ in range(number_count)]
+    numbers = (input() for _ in range(number_count))
     split_phone_numbers(numbers)

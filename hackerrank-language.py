@@ -34,5 +34,5 @@ def get_pattern():
 
 if __name__ == '__main__':
     request_count = int(input())
-    requests = [input() for _ in range(request_count)]
+    requests = (input() for _ in range(request_count))
     verify_request_validity(requests)

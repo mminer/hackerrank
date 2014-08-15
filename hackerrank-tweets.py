@@ -19,5 +19,5 @@ def count_mentions(tweets, keyword):
 
 if __name__ == '__main__':
     tweet_count = int(input())
-    tweets = [input() for _ in range(tweet_count)]
+    tweets = (input() for _ in range(tweet_count))
     print(count_mentions(tweets, 'hackerrank'))

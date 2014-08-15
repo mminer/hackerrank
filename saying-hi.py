@@ -21,5 +21,5 @@ def print_valid_lines(lines):
 
 if __name__ == '__main__':
     line_count = int(input())
-    lines = [input() for _ in range(line_count)]
+    lines = (input() for _ in range(line_count))
     print_valid_lines(lines)

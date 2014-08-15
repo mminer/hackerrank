@@ -19,5 +19,5 @@ def validate_ids(ids):
 
 if __name__ == '__main__':
     id_count = int(input())
-    ids = [input() for _ in range(id_count)]
+    ids = (input() for _ in range(id_count))
     validate_ids(ids)

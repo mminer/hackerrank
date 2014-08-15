@@ -41,5 +41,5 @@ def get_ipv6_pattern():
 
 if __name__ == '__main__':
     address_count = int(input())
-    addresses = [input() for _ in range(address_count)]
+    addresses = (input() for _ in range(address_count))
     validate_addresses(addresses)

@@ -19,5 +19,5 @@ def validate_usernames(usernames):
 
 if __name__ == '__main__':
     username_count = int(input())
-    usernames = [input() for _ in range(username_count)]
+    usernames = (input() for _ in range(username_count))
     validate_usernames(usernames)

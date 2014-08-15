@@ -36,5 +36,5 @@ def get_pattern():
 
 if __name__ == '__main__':
     pair_count = int(input())
-    pairs = [input() for _ in range(pair_count)]
+    pairs = (input() for _ in range(pair_count))
     validate_pairs(pairs)

@@ -19,5 +19,5 @@ def validate_pan_numbers(numbers):
 
 if __name__ == '__main__':
     number_count = int(input())
-    numbers = [input() for _ in range(number_count)]
+    numbers = (input() for _ in range(number_count))
     validate_pan_numbers(numbers)

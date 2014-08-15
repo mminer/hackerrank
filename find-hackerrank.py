@@ -33,5 +33,5 @@ def find_conversation_ranks(conversations):
 
 if __name__ == '__main__':
     conversation_count = int(input())
-    conversations = [input() for _ in range(conversation_count)]
+    conversations = (input() for _ in range(conversation_count))
     find_conversation_ranks(conversations)

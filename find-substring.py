@@ -28,5 +28,5 @@ if __name__ == '__main__':
     line_count = int(input())
     lines = [input() for _ in range(line_count)]
     substring_count = int(input())
-    substrings = [input() for _ in range(substring_count)]
+    substrings = (input() for _ in range(substring_count))
     count_occurrences(lines, substrings)
